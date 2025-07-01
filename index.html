@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closet of Identities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-soft-red text-gray-900 font-sans">
+  <!-- Navigation -->
+  <header class="w-full p-4 sticky header-color top-0 z-10">
+    <nav class="max-w-5xl mx-auto flex justify-center">
+
+      <div class="space-x-4 hidden md:block">
+        <a href="#installation" class="hover:underline">Installation</a>
+        <a href="#missbrauch" class="hover:underline">Missbrauch</a>
+        <a href="#risiken" class="hover:underline">Gefahren</a>
+        <a href="#schutz" class="hover:underline">Umgang</a>
+        <a href="#team" class="hover:underline">Über uns</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section class="max-w-5xl mx-auto px-4 py-8 text-center" id="intro">
+    <h1 class="md:text-8xl text-6xl header-big">Closet of Identities</h1>
+    <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto small-text">
+      Wer wärst du, wenn du jemand anderes sein könntest? Unsere interaktive Installation lädt dich ein, Identität neu zu denken, durch Spiegel, Schrank und Deepfake-Technologie. Zwischen Faszination und Irritation beginnt hier eine Reise zu dir selbst und deiner digitalen Präsenz.
+    </p>
+
+    <div class="relative w-full pb-[56.25%] max-w-[1040px] mx-auto mt-8">
+    <video
+        id="myVideo"
+        autoplay
+        loop
+        playsinline
+        class="absolute top-0 left-0 w-full h-full rounded cursor-pointer"
+        onclick="this.paused ? this.play() : this.pause();"
+    >
+    <source src="assets/videos/buffer_video.mp4" type="video/mp4" />
+    </video>
+    </div>
+
+  </section>
+
+<section class="max-w-5xl mx-auto px-4 py-16" id="installation">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+
+    <!-- Textbereich -->
+    <div class="md:w-1/2">
+      <h2 class="md:text-5xl text-5xl header-big">
+        Unsere <span class="text-orange-500">Installation</span>
+      </h2>
+      <p class="mt-4">
+        Vor dem Betreten der Ausstellung erwartet dich ein übergroßer Spiegel, bedeckt mit bunten Stickern. Er stellt die Frage: „Wolltest du schon immer mal wer anders sein?“
+        <br /><br /> 
+        Dahinter: ein scheinbar harmloser, vintage-beklebter Holzschrank, doch wer ihn öffnet, sieht sich plötzlich mit einem anderen Gesicht. Durch Deepfake-Technologie wird dein Bild manipuliert, mal verspielt, mal verstörend. Ein zweiter Blick offenbart: „Wem gehört dein Gesicht, wenn du gehst?“
+        <br /><br /> 
+        Unsere Installation spielt mit Wahrnehmung, Vertrauen und Kontrolle und hinterlässt bleibende Fragen.
+      </p>
+    </div>
+
+    <!-- Bildbereich -->
+    <div class="md:w-1/2">
+      <img src="assets/images/Harry_Styles.png" alt="Harry Styles" class="rounded w-full max-h-[400px] object-contain" />
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Missbrauch -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="missbrauch">
+    <h2 class="md:text-5xl text-5xl header-big mb-4 text-center">
+        Arten von <span class="text-orange-500">KI Missbrauch</span>
+    </h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="card w-[30%]">
+        <h3>Deepfakes</h3>
+        <p>Täuschend echte Bilder, Videos oder Audios werden von KI erzeugt und für Desinformation oder Manipulation genutzt.</p>
+      </div>
+      <div class="card w-[30%]">
+        <h3>Fake-Profile & Identitätsdiebstahl</h3>
+        <p>Gesichter, Stimmen oder Namen werden gestohlen und in Social Media oder Betrugsszenarien eingesetzt.</p>
+      </div>
+      <div class="card w-[30%]">
+        <h3>Microtargeting & Manipulation</h3>
+        <p>Mit KI-generierten Nutzerprofilen wird gezielt Werbung gemacht oder politische Meinung gesteuert.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-4">
+      <div class="card w-[30%]">
+        <h3>Fake-News-Produktion</h3>
+        <p>KI erzeugt glaubwürdige Texte, Bilder und Videos, die zur Verbreitung von Falschmeldungen dienen.</p>
+      </div>
+      <div class="card w-[30%]">
+        <h3>Stimme & Gesicht als Zugang</h3>
+        <p>Deepfakes täuschen biometrische Systeme wie Stimmerkennung oder Face ID - z.B. beim Banking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risiken -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="risiken">
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    
+    <!-- Text links -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="md:text-5xl text-5xl header-big mb-4">
+        Risiken &<span class="text-orange-500"> Gefahren</span>
+      </h2>
+      <p>Digitale Fälschungen oder gestohlene Identitäten können Menschen bloßstellen, manipulieren oder erpressen. Sie gefährden das Vertrauen in Medien, erschweren die Unterscheidung von Wahrheit und Lüge und haben reale Folgen: psychisch, gesellschaftlich, politisch oder finanziell.</p>
+    </div>
+
+    <!-- Bild rechts -->
+    <div class="md:w-1/2">
+      <img src="assets/images/deepfake_danger.jpg" alt="Risiken Illustration" class="w-full rounded shadow"/>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Schutz & Umgang -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="schutz">
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    
+    <!-- Text links -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="md:text-5xl text-5xl header-big md-4">
+        Schutz & <span class="text-orange-500">Umgang</span>
+      </h2>
+      <p></br>Digitale Fälschungen oder gestohlene Identitäten können Menschen bloßstellen, manipulieren oder erpressen. Sie gefährden das Vertrauen in Medien, erschweren die Unterscheidung von Wahrheit und Lüge und haben reale Folgen: psychisch, gesellschaftlich, politisch oder finanziell.</p>
+    </div>
+
+    <!-- Bild rechts -->
+    <div class="md:w-1/2">
+      <ul class="list-disc list-inside mt-4 space-y-2">
+        <li>Medien kritisch hinterfragen</li>
+        <li>Gesicht nicht überall posten</li>
+        <li>Stimme schützen</li>
+        <li>Dubiose Einladungen meiden</li>
+        <li>Verdächtige Software/Filter meiden</li>
+        <li>Realistische Szenarien prüfen</li>
+      </ul>
+    </div>
+
+  </div>
+  </section>
+
+
+  <!-- Team -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="team">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+
+    <!-- Textbereich -->
+    <div class="md:w-1/2">
+      <h2 class="md:text-5xl text-5xl header-big">
+        Über <span class="text-orange-500">uns</span>
+      </h2>
+        <p class="mt-4 small-text">Wir sind ein studentisches Team der Hochschule München. Unser Projekt „Closet of Identities“ beschäftigt sich mit den Chancen und Risiken von Deepfakes und digitalem Identitätsmissbrauch, kreativ und kritisch zugleich.</p>
+    </div>
+
+    <!-- Bildbereich -->
+    <div class="md:w-1/2">
+      <img src="assets/images/Team.png" alt="Das Team" class="rounded w-full max-h-[400px] object-contain" />
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-orange-100 py-8 px-4 md:px-8">
+<div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl header-big mb-4">Projektinfo</h3>
+    <p class="small-text mb-6">
+      Ein studentisches Projekt im Rahmen des Kurses „Projektmodul Künstliche Intelligenz“<br>
+      Hochschule München – MUC.DAI – Sommersemester 2025
+    </p>
+    
+    <h3 class="text-2xl header-big mb-2">Kontakt</h3>
+    <p>
+      <a href="mailto:fichter@hm.edu" class="underline small-text">fichter@hm.edu</a>
+    </p>
+</div>
+</footer>
+
+</body>
+</html>

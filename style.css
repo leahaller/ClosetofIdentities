@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-soft-red {
+  background-color: #FFF8F1;
+}
+
+.header-big {
+    font-family: Caprasimo;
+}
+
+.small-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-color {
+    background-color: oklch(98% 0.016 73.684);
+}
+
+.footer {
+    background-color: #FFE3C7;
+}
+
+:root {
+  --main-font: 'Inter', sans-serif;
+  --main-color: #ff6600;
+  --soft-color: #FFE3C7;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+
+.bg-soft-red {
+  background-color: oklch(98% 0.016 73.684);
+}
+
+.card {
+  background-color: var(--soft-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;;
+  color: black;
+}
