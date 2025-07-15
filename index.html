@@ -12,39 +12,52 @@
 </head>
 
 <body class="bg-soft-red text-gray-900 font-sans">
-  <!-- Navigation -->
-  <header class="w-full p-6 sticky header-color top-0 z-10">
-    <nav class="w-full flex justify-center">
 
-      <div class="space-x-12 hidden md:block">
-        <a href="#installation" class="hover:underline">Installation</a>
-        <a href="#missbrauch" class="hover:underline">Missbrauch</a>
-        <a href="#risiken" class="hover:underline">Gefahren</a>
-        <a href="#schutz" class="hover:underline">Umgang</a>
-        <a href="#team" class="hover:underline">Über uns</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full h-20 bg-[#442918] z-50 flex justify-center items-center ">
+    <!-- Desktop-Navigation -->
+    <div class="space-x-12 hidden md:flex">
+      <a href="#installation" class="text-[#FAF6EB] hover:underline">Installation</a>
+      <a href="#missbrauch" class="text-[#FAF6EB] hover:underline">Missbrauch</a>
+      <a href="#risiken" class="text-[#FAF6EB] hover:underline">Gefahren</a>
+      <a href="#schutz" class="text-[#FAF6EB] hover:underline">Umgang</a>
+      <a href="#team" class="text-[#FAF6EB] hover:underline">Über uns</a>
+    </div>
+    <!-- Hamburger-Button (nur mobil) -->
+    <button id="menu-btn" class="md:hidden ml-auto p-2" aria-label="Menü öffnen">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <!-- Mobile-Menü -->
+    <div id="mobile-menu" class="hidden absolute top-14 left-0 w-full bg-[#442918] flex flex-col items-center justify-center space-y-6 py-6 z-50 md:hidden">
+      <a href="#installation" class="block text-white text-lg">Installation</a>
+      <a href="#missbrauch" class="block text-white text-lg">Missbrauch</a>
+      <a href="#risiken" class="block text-white text-lg">Gefahren</a>
+      <a href="#schutz" class="block text-white text-lg">Umgang</a>
+      <a href="#team" class="block text-white text-lg">Über uns</a>
+    </div>
+  </nav>
 
   <!-- Intro -->
   <section class="w-full px-4 py-8 text-center relative" id="intro">
     <div class="intro-rectangle"></div>
     <h1 class="md:text-8xl text-6xl header-big">Closet of Identities</h1>
-    <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto small-text">
+    <p class="intro-subtitle mt-4 mb-4 text-lg md:text-xl max-w-2xl mx-auto small-text">
       Wer wärst du, wenn du jemand anderes sein könntest? 
     </p>
 
-    <div class="relative w-full pb-[56.25%] max-w-[1040px] mx-auto">
-    <video
+    <div class="relative w-full max-w-[70%] mx-auto">
+      <video
         id="myVideo"
-        
+        autoplay
         loop
         playsinline
-        class="absolute top-0 left-0 w-full h-full rounded cursor-pointer"
+        class="w-full h-auto cursor-pointer"
         onclick="this.paused ? this.play() : this.pause();"
-    >
-    <source src="assets/videos/Trailer.mp4" type="video/mp4" />
-    </video>
+      >
+        <source src="assets/videos/Trailer.mp4" type="video/mp4" />
+      </video>
     </div>
 
     <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto small-text intro-desc ">
@@ -189,6 +202,21 @@
     </p>
 </div>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+</script>
 
 </body>
 </html>
