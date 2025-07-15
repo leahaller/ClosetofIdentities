@@ -71,7 +71,7 @@ body {
   top: 0px;           /* Abstand von oben */
   left: 0px;
   width: 100%;          /* oder z.B. 1000px */
-  height: 40%;       /* Höhe des Rechtecks */
+  height: 50%;       /* Höhe des Rechtecks */
   background: #442918; /* Wunschfarbe */
   z-index: 0;
 }
