@@ -8,13 +8,34 @@ body {
 
 .header-big {
     font-family: Caprasimo;
-    margin-top: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 .intro-subtitle {
   font-family: Caprasimo !important;
   color: #FB8500 !important;
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
+}
+
+.subtitle-big {
+  font-family: Caprasimo;
+  font-size: 5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-family: Caprasimo;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  max-width: 90%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .small-text {
@@ -71,7 +92,7 @@ body {
   top: 0px;           /* Abstand von oben */
   left: 0px;
   width: 100%;          /* oder z.B. 1000px */
-  height: 50%;       /* Höhe des Rechtecks */
+  height: 30rem;       /* Höhe des Rechtecks */
   background: #442918; /* Wunschfarbe */
   z-index: 0;
 }

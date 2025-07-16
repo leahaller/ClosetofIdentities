@@ -43,7 +43,7 @@
   <section class="w-full px-4 py-8 text-center relative" id="intro">
     <div class="intro-rectangle"></div>
     <h1 class="md:text-8xl text-6xl header-big">Closet of Identities</h1>
-    <p class="intro-subtitle mt-4 mb-4 text-lg md:text-xl max-w-2xl mx-auto small-text">
+    <p class="intro-subtitle mt-4 mb-12 text-lg md:text-xl max-w-[70%] mx-auto small-text">
       Wer wärst du, wenn du jemand anderes sein könntest? 
     </p>
 
@@ -60,7 +60,7 @@
       </video>
     </div>
 
-    <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto small-text intro-desc ">
+    <p class="mt-12 text-lg md:text-xl max-w-[70%] mx-auto small-text intro-desc ">
       Unsere interaktive Installation lädt dich ein, Identität neu zu denken, durch Spiegel, Schrank und Deepfake-Technologie. Zwischen Faszination und Irritation beginnt hier eine Reise zu dir selbst und deiner digitalen Präsenz.
     </p>
 
@@ -71,7 +71,7 @@
 
     <!-- Textbereich -->
     <div class="md:w-1/2">
-      <h2 class="md:text-5xl text-5xl header-big">
+      <h2 class="subtitle-big">
         Unsere <span class="text-orange-500">Installation</span>
       </h2>
       <p class="mt-4">
@@ -84,8 +84,8 @@
     </div>
 
     <!-- Bildbereich -->
-    <div class="md:w-1/2">
-      <img src="assets/images/Harry_Styles.png" alt="Harry Styles" class="rounded w-full max-h-[400px] object-contain" />
+    <div class="md:w-1/2 flex justify-center items-center">
+      <img src="assets/images/Schrank groß.png" alt="Harry Styles" class="rounded w-full max-h-[400px] object-contain" />
     </div>
 
   </div>
@@ -94,35 +94,38 @@
 
   <!-- Missbrauch -->
   <section class="w-full px-32 py-16" id="missbrauch">
-    <h2 class="md:text-5xl text-5xl header-big mb-4 text-center">
-        Arten von <span class="text-orange-500">KI Missbrauch</span>
-    </h2>
-    <div class="flex flex-wrap justify-center gap-4">
-      <div class="card w-[30%]">
-        <h3>Deepfakes</h3>
-        <p>Täuschend echte Bilder, Videos oder Audios werden von KI erzeugt und für Desinformation oder Manipulation genutzt.</p>
-      </div>
-      <div class="card w-[30%]">
-        <h3>Fake-Profile & Identitätsdiebstahl</h3>
-        <p>Gesichter, Stimmen oder Namen werden gestohlen und in Social Media oder Betrugsszenarien eingesetzt.</p>
-      </div>
-      <div class="card w-[30%]">
-        <h3>Microtargeting & Manipulation</h3>
-        <p>Mit KI-generierten Nutzerprofilen wird gezielt Werbung gemacht oder politische Meinung gesteuert.</p>
-      </div>
+  <h2 class="subtitle-big">
+    Arten von <span class="text-orange-500">KI Missbrauch</span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-6 gap-8 px-4 md:px-0">
+    <div class="col-span-6 md:col-span-3 bg-[#442918] text-[#FAF6EB] rounded-lg p-6">
+      <h3 class="card-title">Stimme & Gesicht als Zugang</h3>
+      <p class="text-sm">Täuschend echte Bilder, Videos oder Audios werden von KI erzeugt und für Desinformation oder Manipulation genutzt.</p>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-4 mt-4">
-      <div class="card w-[30%]">
-        <h3>Fake-News-Produktion</h3>
-        <p>KI erzeugt glaubwürdige Texte, Bilder und Videos, die zur Verbreitung von Falschmeldungen dienen.</p>
-      </div>
-      <div class="card w-[30%]">
-        <h3>Stimme & Gesicht als Zugang</h3>
-        <p>Deepfakes täuschen biometrische Systeme wie Stimmerkennung oder Face ID - z.B. beim Banking.</p>
-      </div>
+    <div class="col-span-6 md:col-span-3 bg-[#442918] text-[#FAF6EB] rounded-lg p-6">
+      <h3 class="card-title">Fake-Profile & Identitätsdiebstahl</h3>
+      <p class="text-sm">Gesichter, Stimmen oder Namen werden gestohlen und in Social Media oder Betrugsszenarien eingesetzt.</p>
     </div>
-  </section>
+
+    <div class="col-span-6 md:col-span-2 bg-[#442918] text-[#FAF6EB] rounded-lg p-6">
+      <h3 class="card-title">Micro-targeting & Manipulation</h3>
+      <p class="text-sm">Mit KI-generierten Nutzerprofilen wird gezielt Werbung gemacht oder politische Meinung gesteuert.</p>
+    </div>
+
+    <div class="col-span-6 md:col-span-2 bg-[#442918] text-[#FAF6EB] rounded-lg p-6">
+      <h3 class="card-title">Fake-News-Produktion</h3>
+      <p class="text-sm">Täuschend echte Bilder, Videos oder Audios werden von KI erzeugt und für Desinformation oder Manipulation genutzt.</p>
+    </div>
+
+    <div class="col-span-6 md:col-span-2 bg-[#442918] text-[#FAF6EB] rounded-lg p-6">
+      <h3 class="card-title">Deepfakes</h3>
+      <p class="text-sm">Täuschend echte Bilder, Videos oder Audios werden von KI erzeugt und für Desinformation oder Manipulation genutzt.</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- Risiken -->
   <section class="w-full px-32 py-16" id="risiken">
@@ -130,15 +133,16 @@
     
     <!-- Text links -->
     <div class="md:w-1/2 text-center md:text-left">
-      <h2 class="md:text-5xl text-5xl header-big mb-4">
+      <h2 class="subtitle-big">
         Risiken &<span class="text-orange-500"> Gefahren</span>
       </h2>
-      <p>Digitale Fälschungen oder gestohlene Identitäten können Menschen bloßstellen, manipulieren oder erpressen. Sie gefährden das Vertrauen in Medien, erschweren die Unterscheidung von Wahrheit und Lüge und haben reale Folgen: psychisch, gesellschaftlich, politisch oder finanziell.</p>
+      <p>Digitale Fälschungen oder gestohlene Identitäten können Menschen bloßstellen, manipulieren oder erpressen. Sie gefährden das Vertrauen in Medien, erschweren die Unterscheidung von Wahrheit und Lüge und haben reale Folgen: psychisch, gesellschaftlich, politisch oder finanziell. Besonders durch Deepfakes verschwimmen die Grenzen zwischen Realität und Fiktion, was die öffentliche Meinungsbildung massiv beeinflussen kann. Opfer solcher Technologien leiden nicht nur unter Rufschädigung, sondern oft auch unter Angst, Kontrollverlust und sozialem Rückzug. Gleichzeitig entstehen neue Herausforderungen für Gesetzgebung, Bildung und Medienkompetenz.</p>
     </div>
 
     <!-- Bild rechts -->
-    <div class="md:w-1/2">
-      <img src="assets/images/deepfake_danger.jpg" alt="Risiken Illustration" class="w-full rounded shadow"/>
+    <div class="w-full md:w-1/5 flex justify-center md:justify-center">
+      <img src="assets/images/Gefahr.png" alt="Gefahr" 
+          class="w-full max-w-[200px] md:max-w-full h-auto rounded shadow"/>
     </div>
 
   </div>
@@ -146,30 +150,36 @@
 
   <!-- Schutz & Umgang -->
   <section class="w-full px-32 py-16" id="schutz">
-  <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-    
-    <!-- Text links -->
-    <div class="md:w-1/2 text-center md:text-left">
-      <h2 class="md:text-5xl text-5xl header-big md-4">
-        Schutz & <span class="text-orange-500">Umgang</span>
-      </h2>
-      <p></br>Digitale Manipulation kann jede und jeden treffen, ob durch gestohlene Identität, Deepfake oder Fake-Profil. Umso wichtiger ist es, bewusst mit den eigenen Daten umzugehen und sich zu schützen.<br/>          Im Ernstfall gilt: Beweise sichern, Plattformen informieren, rechtliche Beratung suchen und ggf. Anzeige erstatten.</p>
-    </div>
+    <!-- Überschrift -->
+    <h2 class="subtitle-big text-left mb-8">
+      Schutz & <span class="text-orange-500">Umgang</span>
+    </h2>
 
-    <!-- Bild rechts -->
-    <div class="md:w-1/2">
-      <ul class="list-disc list-inside mt-4 space-y-2">
-        <li>Medien kritisch hinterfragen</li>
-        <li>Gesicht nicht überall posten</li>
-        <li>Stimme schützen</li>
-        <li>Dubiose Einladungen meiden</li>
-        <li>Verdächtige Software/Filter meiden</li>
-        <li>Realistische Szenarien prüfen</li>
-      </ul>
-    </div>
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- Fließtext -->
+      <div class="w-full md:w-1/2 text-left">
+        <p>
+          Digitale Manipulation kann jede und jeden treffen, ob durch gestohlene Identität, Deepfake oder Fake-Profil.
+          Umso wichtiger ist es, bewusst mit den eigenen Daten umzugehen und sich zu schützen.
+          <br /><br />
+          Im Ernstfall gilt: Beweise sichern, Plattformen informieren, rechtliche Beratung suchen und ggf. Anzeige erstatten.
+        </p>
+      </div>
 
-  </div>
+      <!-- Liste -->
+      <div class="w-full md:w-1/3">
+        <ul class="mt-2 space-y-2">
+          <li>→ Medien kritisch hinterfragen</li>
+          <li>→ Gesicht nicht überall posten</li>
+          <li>→ Stimme schützen</li>
+          <li>→ Dubiose Einladungen meiden</li>
+          <li>→ Verdächtige Software/Filter meiden</li>
+          <li>→ Realistische Szenarien prüfen</li>
+        </ul>
+      </div>
+    </div>
   </section>
+
 
 
   <!-- Team -->
@@ -178,7 +188,7 @@
 
     <!-- Textbereich -->
     <div class="md:w-1/2">
-      <h2 class="md:text-5xl text-5xl header-big">
+      <h2 class="subtitle-big">
         Über <span class="text-orange-500">uns</span>
       </h2>
         <p class="mt-4 small-text">Wir sind ein studentisches Team der Hochschule München. Unser Projekt „Closet of Identities“ beschäftigt sich mit den Chancen und Risiken von Deepfakes und digitalem Identitätsmissbrauch, kreativ und kritisch zugleich.</p>
