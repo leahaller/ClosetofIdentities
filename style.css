@@ -8,14 +8,14 @@ body {
 
 .header-big {
     font-family: Caprasimo;
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
 .intro-subtitle {
   font-family: Caprasimo !important;
   color: #FB8500 !important;
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 
 .subtitle-big {
@@ -50,6 +50,10 @@ body {
 .footer {
     background-color: #442918;
     color: #FAF6EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 :root {
