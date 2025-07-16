@@ -15,12 +15,12 @@ body {
 .intro-subtitle {
   font-family: Caprasimo !important;
   color: #FB8500 !important;
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
 }
 
 .subtitle-big {
   font-family: Caprasimo;
-  font-size: 5rem;
+  font-size: 4rem;
   word-break: break-word;
   overflow-wrap: break-word;
   line-height: 1;
